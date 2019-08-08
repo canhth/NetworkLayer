@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A606E49B22FC9501008B403C /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A606E49A22FC9501008B403C /* AuthService.swift */; };
+		A606E49E22FC9512008B403C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A606E49C22FC9511008B403C /* ViewController.swift */; };
+		A606E49F22FC9512008B403C /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A606E49D22FC9512008B403C /* LoginViewModel.swift */; };
+		A606E4A222FC951D008B403C /* LoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A606E4A022FC951D008B403C /* LoginRequest.swift */; };
+		A606E4A322FC951D008B403C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A606E4A122FC951D008B403C /* User.swift */; };
 		A640AF1E22FB7517005A37F6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A640AF1D22FB7517005A37F6 /* AppDelegate.swift */; };
 		A640AF2422FB7518005A37F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A640AF2322FB7518005A37F6 /* Assets.xcassets */; };
 		A640AF2722FB7518005A37F6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A640AF2622FB7518005A37F6 /* Preview Assets.xcassets */; };
@@ -15,11 +20,6 @@
 		A640AF4522FB759E005A37F6 /* APIEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = A640AF4122FB759E005A37F6 /* APIEndpoint.swift */; };
 		A640AF4722FB759E005A37F6 /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A640AF4322FB759E005A37F6 /* NetworkClient.swift */; };
 		A640AF4822FB759E005A37F6 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A640AF4422FB759E005A37F6 /* NetworkError.swift */; };
-		A640AF4A22FB75B5005A37F6 /* LoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A640AF4922FB75B5005A37F6 /* LoginRequest.swift */; };
-		A640AF4C22FB75C0005A37F6 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A640AF4B22FB75BF005A37F6 /* User.swift */; };
-		A640AF4F22FB766E005A37F6 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A640AF4E22FB766E005A37F6 /* AuthService.swift */; };
-		A6F8B2AF22FBD77B0012419C /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F8B2AE22FBD77B0012419C /* LoginViewModel.swift */; };
-		A6F8B2B122FC75600012419C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F8B2B022FC75600012419C /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +33,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A606E49A22FC9501008B403C /* AuthService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		A606E49C22FC9511008B403C /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A606E49D22FC9512008B403C /* LoginViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		A606E4A022FC951D008B403C /* LoginRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginRequest.swift; sourceTree = "<group>"; };
+		A606E4A122FC951D008B403C /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		A640AF1A22FB7517005A37F6 /* NetworkLayerExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetworkLayerExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A640AF1D22FB7517005A37F6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A640AF2322FB7518005A37F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -45,11 +50,6 @@
 		A640AF4122FB759E005A37F6 /* APIEndpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIEndpoint.swift; sourceTree = "<group>"; };
 		A640AF4322FB759E005A37F6 /* NetworkClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
 		A640AF4422FB759E005A37F6 /* NetworkError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
-		A640AF4922FB75B5005A37F6 /* LoginRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginRequest.swift; path = ../../../../../../../System/Volumes/Data/Users/canhtran/Desktop/NetworkLayerExample/NetworkLayerExample/NetworkLayer/Models/LoginRequest.swift; sourceTree = "<group>"; };
-		A640AF4B22FB75BF005A37F6 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = User.swift; path = ../../../../../../../System/Volumes/Data/Users/canhtran/Desktop/NetworkLayerExample/NetworkLayerExample/NetworkLayer/Models/User.swift; sourceTree = "<group>"; };
-		A640AF4E22FB766E005A37F6 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AuthService.swift; path = ../../../../../../System/Volumes/Data/Users/canhtran/Desktop/NetworkLayerExample/NetworkLayerExample/NetworkLayer/AuthService.swift; sourceTree = "<group>"; };
-		A6F8B2AE22FBD77B0012419C /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginViewModel.swift; path = ../../../../../System/Volumes/Data/Users/canhtran/Desktop/NetworkLayerExample/NetworkLayerExample/LoginViewModel.swift; sourceTree = "<group>"; };
-		A6F8B2B022FC75600012419C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = ../../../../../System/Volumes/Data/Users/canhtran/Desktop/NetworkLayerExample/NetworkLayerExample/ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,8 +93,8 @@
 			children = (
 				A640AF3F22FB753E005A37F6 /* NetworkLayer */,
 				A640AF1D22FB7517005A37F6 /* AppDelegate.swift */,
-				A6F8B2AE22FBD77B0012419C /* LoginViewModel.swift */,
-				A6F8B2B022FC75600012419C /* ViewController.swift */,
+				A606E49D22FC9512008B403C /* LoginViewModel.swift */,
+				A606E49C22FC9511008B403C /* ViewController.swift */,
 				A640AF2322FB7518005A37F6 /* Assets.xcassets */,
 				A640AF2822FB7518005A37F6 /* LaunchScreen.storyboard */,
 				A640AF2B22FB7518005A37F6 /* Info.plist */,
@@ -123,7 +123,7 @@
 		A640AF3F22FB753E005A37F6 /* NetworkLayer */ = {
 			isa = PBXGroup;
 			children = (
-				A640AF4E22FB766E005A37F6 /* AuthService.swift */,
+				A606E49A22FC9501008B403C /* AuthService.swift */,
 				A640AF4D22FB760C005A37F6 /* BaseNetworking */,
 				A640AF4022FB7550005A37F6 /* Models */,
 			);
@@ -133,8 +133,8 @@
 		A640AF4022FB7550005A37F6 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				A640AF4922FB75B5005A37F6 /* LoginRequest.swift */,
-				A640AF4B22FB75BF005A37F6 /* User.swift */,
+				A606E4A022FC951D008B403C /* LoginRequest.swift */,
+				A606E4A122FC951D008B403C /* User.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -252,13 +252,13 @@
 			files = (
 				A640AF1E22FB7517005A37F6 /* AppDelegate.swift in Sources */,
 				A640AF4822FB759E005A37F6 /* NetworkError.swift in Sources */,
-				A640AF4F22FB766E005A37F6 /* AuthService.swift in Sources */,
-				A6F8B2B122FC75600012419C /* ViewController.swift in Sources */,
-				A640AF4C22FB75C0005A37F6 /* User.swift in Sources */,
-				A6F8B2AF22FBD77B0012419C /* LoginViewModel.swift in Sources */,
 				A640AF4522FB759E005A37F6 /* APIEndpoint.swift in Sources */,
 				A640AF4722FB759E005A37F6 /* NetworkClient.swift in Sources */,
-				A640AF4A22FB75B5005A37F6 /* LoginRequest.swift in Sources */,
+				A606E49E22FC9512008B403C /* ViewController.swift in Sources */,
+				A606E4A322FC951D008B403C /* User.swift in Sources */,
+				A606E49B22FC9501008B403C /* AuthService.swift in Sources */,
+				A606E49F22FC9512008B403C /* LoginViewModel.swift in Sources */,
+				A606E4A222FC951D008B403C /* LoginRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
