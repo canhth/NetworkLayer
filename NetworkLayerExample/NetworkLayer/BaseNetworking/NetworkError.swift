@@ -9,9 +9,6 @@
 import Foundation 
 
 enum NetworkError: Error {
-    /// Unable to generate the URL request for the given options.
-    case unableToGenerateURLRequest
-    
     /// Expected deserialization of the response failed.
     case badDeserialization
     
@@ -28,15 +25,13 @@ enum NetworkError: Error {
     case fetchError(error: Error)
     
     /// The status code does not indicate success for the specified response.
-    case noSuccessResponse(code: String)
+    case noSuccessResponse(code: Int)
 }
 
 extension NetworkError {
     // swiftlint:disable line_length
     var localizedDescription: String {
         switch self {
-        case .unableToGenerateURLRequest:
-            return NSLocalizedString("Unable to generate the URL request for the given options.", comment: "Unable to generate the URL request for the given options.")
         case .badDeserialization:
             return NSLocalizedString("Deserialization failed.", comment: "Expected deserialization of the response failed.")
         case .unableToParse:
@@ -52,3 +47,4 @@ extension NetworkError {
         }
     }
 }
+

@@ -12,6 +12,7 @@
 		A606E49F22FC9512008B403C /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A606E49D22FC9512008B403C /* LoginViewModel.swift */; };
 		A606E4A222FC951D008B403C /* LoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A606E4A022FC951D008B403C /* LoginRequest.swift */; };
 		A606E4A322FC951D008B403C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A606E4A122FC951D008B403C /* User.swift */; };
+		A606E4A522FC96F5008B403C /* Publisher+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A606E4A422FC96F4008B403C /* Publisher+Extension.swift */; };
 		A640AF1E22FB7517005A37F6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A640AF1D22FB7517005A37F6 /* AppDelegate.swift */; };
 		A640AF2422FB7518005A37F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A640AF2322FB7518005A37F6 /* Assets.xcassets */; };
 		A640AF2722FB7518005A37F6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A640AF2622FB7518005A37F6 /* Preview Assets.xcassets */; };
@@ -38,6 +39,7 @@
 		A606E49D22FC9512008B403C /* LoginViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		A606E4A022FC951D008B403C /* LoginRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginRequest.swift; sourceTree = "<group>"; };
 		A606E4A122FC951D008B403C /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		A606E4A422FC96F4008B403C /* Publisher+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Publisher+Extension.swift"; path = "../../../../../../../../System/Volumes/Data/Users/canhtran/Documents/Projects/NetworkLayer/NetworkLayerExample/NetworkLayer/BaseNetworking/Publisher+Extension.swift"; sourceTree = "<group>"; };
 		A640AF1A22FB7517005A37F6 /* NetworkLayerExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetworkLayerExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A640AF1D22FB7517005A37F6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A640AF2322FB7518005A37F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -145,6 +147,7 @@
 				A640AF4122FB759E005A37F6 /* APIEndpoint.swift */,
 				A640AF4322FB759E005A37F6 /* NetworkClient.swift */,
 				A640AF4422FB759E005A37F6 /* NetworkError.swift */,
+				A606E4A422FC96F4008B403C /* Publisher+Extension.swift */,
 			);
 			path = BaseNetworking;
 			sourceTree = "<group>";
@@ -254,6 +257,7 @@
 				A640AF4822FB759E005A37F6 /* NetworkError.swift in Sources */,
 				A640AF4522FB759E005A37F6 /* APIEndpoint.swift in Sources */,
 				A640AF4722FB759E005A37F6 /* NetworkClient.swift in Sources */,
+				A606E4A522FC96F5008B403C /* Publisher+Extension.swift in Sources */,
 				A606E49E22FC9512008B403C /* ViewController.swift in Sources */,
 				A606E4A322FC951D008B403C /* User.swift in Sources */,
 				A606E49B22FC9501008B403C /* AuthService.swift in Sources */,
@@ -415,7 +419,7 @@
 				DEVELOPMENT_TEAM = S4L5HY6Q7D;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = NetworkLayerExample/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -436,7 +440,7 @@
 				DEVELOPMENT_TEAM = S4L5HY6Q7D;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = NetworkLayerExample/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

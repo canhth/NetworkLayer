@@ -7,9 +7,11 @@
 //
 
 import Foundation
+import Combine
 
-enum AuthServiceEndpoint: Endpoint {
-    
+typealias AuthAPIResponse = AnyPublisher<Result<User, NetworkError>, Never>
+
+enum AuthServiceEndpoint: Endpoint { 
     case login
     case logout
     
@@ -38,7 +40,7 @@ enum AuthServiceEndpoint: Endpoint {
 
 /// Represent the AuthService APIs as a contract for the concrete type to implement
 protocol AuthService {
-    func login(loginRequest: LoginRequest, completion: @escaping(Result<User, NetworkError>) -> Void)
+    func login(loginRequest: LoginRequest) -> AuthAPIResponse
 }
 
 struct AuthServiceRepository: AuthService {
@@ -47,13 +49,12 @@ struct AuthServiceRepository: AuthService {
     ///
     /// - Parameters:
     ///   - loginRequest: login request object as the parameters
-    ///   - completion: result as User/Error
-    func login(loginRequest: LoginRequest, completion: @escaping(Result<User, NetworkError>) -> Void) {
+    func login(loginRequest: LoginRequest) -> AuthAPIResponse {
         let endPoint: AuthServiceEndpoint = .login
         let requestBody = endPoint.parametersToHttpBody(loginRequest)
         let networkClient = NetworkClient()
         
-        guard let request = networkClient.buildRequest(from: endPoint, requestBody: requestBody) else { completion(.failure(.unableToGenerateURLRequest)); return }
-        networkClient.fetch(request: request, type: User.self, completion: completion)
+        guard let request = networkClient.buildRequest(from: endPoint, requestBody: requestBody) else { return .empty() }
+        return networkClient.fetch(request: request)
     }
 }

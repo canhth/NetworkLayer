@@ -32,19 +32,14 @@ protocol Endpoint {
     var environment: Environment { get }
     var path: String { get }
     var headers: HTTPHeaders { get }
-    var parameters: JSON? { get }
+    var parameters: JSON { get }
     var method: HTTPMethod { get }
 }
 
 extension Endpoint {
     
     var base: String {
-        switch environment {
-        case .staging:
-            return "https://www.wtwmexico-qa.com.mx/WSApiMovilQA/api"
-        case .production:
-            return "https://www.wtwmexico-qa.com.mx/WSApiMovilQA/api"
-        }
+        return "https://www.wtwmexico-qa.com.mx/WSApiMovilQA/api"
     }
     
     var headers: HTTPHeaders {
@@ -54,6 +49,11 @@ extension Endpoint {
     /// Default environment
     var environment: Environment {
         return .staging
+    }
+    
+    /// Default parameters
+    var parameters: JSON {
+        return ["": ""]
     }
     
     /// A computed property to return a instance of a URLComponents
